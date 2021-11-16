@@ -41,22 +41,22 @@ const (
 
 	// maxHeadersServe is the maximum number of block headers to serve. This number
 	// is there to limit the number of disk lookups.
-	maxHeadersServe = 1024
+	maxHeadersServe = 256
 
 	// maxBodiesServe is the maximum number of block bodies to serve. This number
 	// is mostly there to limit the number of disk lookups. With 24KB block sizes
 	// nowadays, the practical limit will always be softResponseLimit.
-	maxBodiesServe = 1024
+	maxBodiesServe = 256
 
 	// maxNodeDataServe is the maximum number of state trie nodes to serve. This
 	// number is there to limit the number of disk lookups.
-	maxNodeDataServe = 1024
+	maxNodeDataServe = 256
 
 	// maxReceiptsServe is the maximum number of block receipts to serve. This
 	// number is mostly there to limit the number of disk lookups. With block
 	// containing 200+ transactions nowadays, the practical limit will always
 	// be softResponseLimit.
-	maxReceiptsServe = 1024
+	maxReceiptsServe = 256
 )
 
 // Handler is a callback to invoke from an outside runner after the boilerplate
